@@ -1,0 +1,2 @@
+### CSS Shape Tricks:
+	https://css-tricks-com/examples/ShapeOfCSS/

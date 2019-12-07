@@ -1,0 +1,113 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+/* Divided part with CSS Shape Section Start */
+.section-absolute-bg {
+	background-image: url(../img/bg-1.jpg);
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-color: #ddd;
+	background-position: center;
+	z-index: 2;
+}
+.absolute-bg-2{background-image: url(../img/bg-2.jpg);}
+.section-padding {
+	background-color: #222931;
+	color: #bbbec0;
+	line-height: 1.7;
+	font-size: 13px;
+	position: relative;
+	z-index: 1;
+	padding: 80px 0;
+}
+.section-padding h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.borderd-btn {
+  border: 1px solid #ddd;
+  color: #fff;
+  padding: 7px 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 21px;
+}
+.boxed-content {
+  position: relative;
+  padding-left: 40px;
+}
+.boxed-content:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 2px;
+  background: #70747a;
+}
+.absolute-bg-left .section-absolute-bg {
+  right: auto;
+  left: 0;
+}
+.absolute-bg-left .boxed-content {
+	margin-left: 80px;
+	padding-right: 0;
+}
+.section-absolute-bg::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	z-index: -1;
+	opacity: 0.3;
+}
+.shape-right::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 25px solid #222931;
+	transform: rotate(90deg);
+	top: 25%;
+	left: 0;
+}
+.shape-left::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 25px solid #222931;
+	transform: rotate(270deg);
+	top: 25%;
+	right: 0;
+}
+/* Divided part with CSS Shape Section Stop */
